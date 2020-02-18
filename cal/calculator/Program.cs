@@ -11,15 +11,20 @@ namespace calculator
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine("a + b = " + add(a, b));
             Console.WriteLine("a - b = " + minus(a, b));
+            Console.WriteLine("a ^ b = " + pow(a, b));
 
         }
         public static int add(int a,int b)
         {
             return a + b;
         }
-         public static int minus(int a,int b)
+        public static int minus(int a,int b)
         {
             return a - b;
+        }
+        public static long int pow(int a,int n)
+        {
+            return a ^ n;
         }
     }
 }
